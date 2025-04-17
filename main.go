@@ -13,6 +13,6 @@ func main() {
 	if err := store.Init(); err != nil {
 		log.Fatal(err.Error())
 	}
-	server := NewAPIServer(":3030", store)
+	server := NewAPIServer(":8080", store)
 	server.Run()
 }
